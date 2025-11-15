@@ -364,7 +364,7 @@ async def handle_caption(client, callback_query):
         "📚 **Course : {b_name}**\n\n"
         "🌟 **Extracted By : {credit}**</blockquote>\n\n"
         "**Caption Style 3**\n"
-        "<blockquote expandable>**{str(count).zfill(3)}.** {name1} [{res}p].{ext}</blockquote>\n\n"
+        "<blockquote expandable>**{str(count).zfill(3)}.** {name1} [{res}p].{ext}</blockquote>\n\n ** Downloaded By: {credit}**</blockquote>\n\n""
         "**Send Your Caption Style eg. /cc1 or /cc2 or /cc3**", reply_markup=keyboard)
     input_msg = await bot.listen(editable.chat.id)
     try:
